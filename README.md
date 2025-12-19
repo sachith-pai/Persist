@@ -12,7 +12,7 @@ A little presence detection and voice assistant device  powered by esphome
 
  ## Circuit schematic diagram
  
- <div align="center">
+ <div align="left">
   <img src="assets/CircuitDiagram.png" width="500" height="400"/>
 </div>
 
