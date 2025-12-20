@@ -1,5 +1,5 @@
 ## Persist
-A little presence detection and voice assistant device  powered by esphome  
+A little presence detection and voice assistant device  powered by ESPHome  
 
 ## Parts Used 
 1. [Hi-Link HLK-LD2420](https://robu.in/product/hlk-ld2420-24ghz-human-body-micro-motion-sensing-detection-radar-sensor-module-hlk-ld2410-low-cost-solution/)
@@ -31,4 +31,46 @@ A little presence detection and voice assistant device  powered by esphome
 |       | GPIO10 | SD | - | - |
 |       | GPIO11 | WS | - | - |
 |       | GPIO12 |SCK  | -| - |
-     
+ 
+- I have used the builtin adreesable led on the ESP32 Board connected to GPIO21
+
+## Features 
+### 1.Led status 
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="assets/connected2esphome.gif" width="150" height="200"><br>
+      Connected successfully to esphome
+    </td>
+    <td align="center">
+      <img src="assets/Succes.gif" width="150" height="200"><br>
+      The pipeline successfully executes
+    </td>
+    <td align="center">
+      <img src="assets/Failed.gif" width="150" height="200"><br>
+      Error in the pipeline
+    </td>
+  </tr>
+</table>
+
+### 2.Presence Sensor 
+<p align="center">
+  <img src="assets/mmwave sensor.png" width="250"> &nbsp;&nbsp;&nbsp;
+  <img src="assets/presence.png" width="250"> 
+</p>
+
+- Unlike PIR sensors, mmWave sensors can detect micro-movements such as breathing or slight body motion. This means they can sense a person even when they are sitting still, making them ideal for smart lights and home automation.
+- mmWave sensors are not affected by lighting conditions, temperature changes, or clothing, and they can even detect presence through thin materials like plastic or curtains. This results in fewer false negatives and more consistent detection.
+
+## Additional Info 
+1. [ESPHome Voice Assistant Docs](https://www.esphome.io/components/voice_assistant/)
+2. [ESPHome LD2420 Docs](https://www.esphome.io/components/sensor/ld2420/)
+3. [M5stack atom echo example code](https://github.com/esphome/wake-word-voice-assistants/blob/main/m5stack-atom-echo/m5stack-atom-echo.yaml)
+
+
+  
+
+  
+
+  
